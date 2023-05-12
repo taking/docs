@@ -1,6 +1,6 @@
 input: ./
 output: .retype
-url: retype.com
+url: docs.taking.kr
 
 branding:
   logo: /static/retype-logo.svg
@@ -11,7 +11,7 @@ meta:
   title: " - Generate, publish, and share documentation"
 
 edit:
-  repo: github.com/retypeapp/retype
+  repo: github.com/taking/docs
 
 editor:
   enabled: false
@@ -36,7 +36,7 @@ links:
     target: blank
 
 footer:
-  copyright: © Copyright {{ year }} – [Retype](https://retype.com/) – All rights reserved
+  copyright: © Copyright {{ year }} – [Taking](https://taking.kr/) – All rights reserved
   links:
     - text: About
       link: about.md
@@ -44,9 +44,3 @@ footer:
     - text: License
       link: license.md
       icon: shield-check
-
-integrations:
-  crisp:
-    id: 9ec0e13c-1299-4c3f-a5e9-ff39363c6960
-  plausible:
-    domain: retype.com
