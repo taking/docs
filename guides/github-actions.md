@@ -4,10 +4,9 @@ category: [guide]
 tags: [guide]
 date: 2020-11-25
 visibility: public
-title: GitHub Actions
 ---
 
-# test
+# GitHub Actions
 
 Add a simple GitHub Action to your project to automate the building and deployment of your Retype powered website.
 
