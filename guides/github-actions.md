@@ -3,10 +3,11 @@ icon: git-compare
 category: [guide]
 tags: [guide]
 date: 2020-11-25
-description: This is a custom description for this page
+visibility: public
+title: GitHub Actions
 ---
 
-# GitHub Actions
+# test
 
 Add a simple GitHub Action to your project to automate the building and deployment of your Retype powered website.
 
