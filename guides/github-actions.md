@@ -1,15 +1,19 @@
 ---
 icon: git-compare
+category: [guide]
 tags: [guide]
+date: 2020-11-25
+description: This is a custom description for this page
 ---
+
 # GitHub Actions
 
 Add a simple GitHub Action to your project to automate the building and deployment of your Retype powered website.
 
 Currently, there are two Retype related GitHub Actions:
 
-1. Retype [Build Action](https://github.com/retypeapp/action-build) 
-2. Retype [GitHub Pages Action](https://github.com/retypeapp/action-github-pages) 
+1. Retype [Build Action](https://github.com/retypeapp/action-build)
+2. Retype [GitHub Pages Action](https://github.com/retypeapp/action-github-pages)
 
 The first, **Build Action** will automatically build your Retype powered website with each new change that is committed.
 
@@ -20,6 +24,7 @@ Automatically deploying to GitHub Pages requires a basic `retype-action.yml` con
 !!!
 Content `write` permission are required so that Retype and can automatically create the `retype` branch and write the generated files into that branch.
 !!!
+
 ---
 
 ## Summary
@@ -75,9 +80,9 @@ If the `retype` branch is not available, the GitHub Action will automatically cr
 If the default branch in your repo is `master`, change `- main` to `- master`. If the docs project was within a `docs` branch, change `- main` to `- docs`. The following snippet demonstrates setting the branch to `master`.
 
 ```yml
-  push:
-    branches:
-      - master
+push:
+  branches:
+    - master
 ```
 
 Commit your `retype-action.yml` file and push to your repo.
@@ -87,11 +92,13 @@ Commit your `retype-action.yml` file and push to your repo.
 If your project requires a Retype License Key, that key can be configured by adding a [`RETYPE_SECRET`](cli.md#retype_secret) secret to your repository and the corresponding `license: {%{${{ secrets.RETYPE_SECRET }}`}%} configuration to your `.github/workflows/retype-action.yml` file.
 
 {%{
+
 ```yml
 - uses: retypeapp/action-build@latest
   with:
     license: ${{ secrets.RETYPE_SECRET }}
 ```
+
 }%}
 
 A standard `.github/workflows/retype-action.yml` file with a Retype license key would look like the following:
