@@ -1,7 +1,7 @@
 ---
 order: 100
 icon: note
-tags: [docker, self-hosted]
+tags: [docker, docker-compose, self-hosted]
 ---
 
 # Coder

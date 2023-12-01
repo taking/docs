@@ -67,6 +67,8 @@ services:
 
 # gitea
 
+```
+
 GITEA**mailer**ENABLED=true
 GITEA**mailer**FROM={your_gmail_account}
 GITEA**mailer**MAILER_TYPE=smtp
@@ -90,3 +92,4 @@ That's it! :tada:
 변경사항(업데이트)가 있을 시, 안내 없이 변경 될 수 있습니다.
 
 !!!
+```
