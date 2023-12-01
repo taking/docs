@@ -19,7 +19,7 @@ tags: [docker, docker-compose, self-hosted]
 - [Coder v2](https://coder.com/docs/v2/latest) (워크스페이스 별로 VS Code 를 관리할 수 있는 플랫폼)
 - [Coder v1](https://coder.com/docs/code-server/latest) (VS Code 단일 서비스)
 
-![Coder v2 Screenshot](https://coder.com/_next/image?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcoder%2Fcoder%2Fmain%2Fdocs%2Fimages%2Fhero-image.png&w=3840&q=100)
+![Coder v2 Screenshot](/static/attachments/coder_image.png)
 
 ## Prerequisites
 

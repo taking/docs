@@ -16,8 +16,8 @@ tags: [docker, self-hosted]
 
 [`Gitlab`](https://about.gitlab.com)는 [`Git`](https://git-scm.com/)을 관리하기 위한 플랫폼으로 Self-hosted로 설치를 통해 Git Repository 프로젝트를 관리할 수 있습니다.
 
-![Gitlab Screenshot 01](/static/gitlab_01.png)
-![Gitlab Screenshot 02](/static/gitlab_02.png)
+![Gitlab Screenshot 01](/static/attachments/gitlab_01.png)
+![Gitlab Screenshot 02](/static/attachments/gitlab_02.png)
 
 ## Prerequisites
 

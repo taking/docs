@@ -22,9 +22,9 @@ tags: [docker, self-hosted]
 - Passkeys
 - Role-Base access control
 
-![Zitadel Screenshot 01](/static/zitadel_01.png)
-![Zitadel Screenshot 02](/static/zitadel_02.png)
-![Zitadel Screenshot 03](/static/zitadel_03.png)
+![Zitadel Screenshot 01](/static/attachments/zitadel_01.png)
+![Zitadel Screenshot 02](/static/attachments/zitadel_02.png)
+![Zitadel Screenshot 03](/static/attachments/zitadel_03.png)
 
 ## Prerequisites
 

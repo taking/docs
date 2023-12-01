@@ -16,7 +16,7 @@ tags: [kubernetes]
 
 [`h5ai`](ttps://larsjung.de/h5ai/)는 모던하고 심플한 파일 서버로 간단하게 설치하여 사용할 수 있다.
 
-![h5ai Screenshot](/static/h5ai_01.png)
+![h5ai Screenshot](/static/attachments/h5ai_01.png)
 
 ## Prerequisites
 
