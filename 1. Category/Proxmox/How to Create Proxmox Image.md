@@ -18,13 +18,13 @@ tags: [proxmox, cloud]
 - [proxmox-ubuntu-cloud-howto | Gist](https://gist.github.com/KrustyHack/fa39e509b5736703fb4a3d664157323f)
 - [Proxmox Cloud-Init OS template creation | alibabacloud](https://www.alibabacloud.com/topic-center/a1/fcsoqejpa74r-proxmox-cloud-init-os-template-creation-what-the-server-alibaba-cloud)
 
-## Prerequisites
+### Prerequisites
 
 - [Proxmox](https://www.proxmox.com/en/downloads) is installed.
 
 ---
 
-## How-to
+### How-to
 
 +++ Prepare Cloud-init Templates
 
