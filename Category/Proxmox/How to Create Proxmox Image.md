@@ -80,7 +80,7 @@ qm set 100 --sata0 /dev/disk/by-id/{YOUR DISK ID}
 
 +++
 
-![Proxmox Screenshot](https://p158.p1.n0.cdn.getcloudapp.com/items/jku6wKk1/c0154f2a-3d08-4562-adc5-d74ac48c39d5.png?source=viewer&v=eca80c12e3151b6321cb33b222960b90)
+![Proxmox Screenshot](/static/proxmox.png)
 
 That's it! :tada:
 

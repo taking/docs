@@ -22,9 +22,9 @@ tags: [docker, self-hosted]
 - Passkeys
 - Role-Base access control
 
-![Zitadel Screenshot 01](https://p158.p1.n0.cdn.getcloudapp.com/items/2NuWLrQx/125bd675-6cab-4631-9aa3-f0fced96ac5f.png?source=viewer&v=f9f66fdcbca345338ca4afa92d1b83a6)
-![Zitadel Screenshot 02](https://p158.p1.n0.cdn.getcloudapp.com/items/jku6wnjy/f09f3489-2ddf-44b4-95d8-bae31ad48c4c.png?source=viewer&v=c5706663581e80515dd2825ec545b14b)
-![Zitadel Screenshot 03](https://p158.p1.n0.cdn.getcloudapp.com/items/qGuYmD4d/e0ae6af4-6dca-46a6-913b-957459f5ac4e.png?source=viewer&v=e06089be7c54355fcff4365211396393)
+![Zitadel Screenshot 01](/static/zitadel_01.png)
+![Zitadel Screenshot 02](/static/zitadel_02.png)
+![Zitadel Screenshot 03](/static/zitadel_03.png)
 
 ## Prerequisites
 
