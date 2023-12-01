@@ -20,13 +20,13 @@ tags: [kubernetes]
 
 ## Prerequisites
 
-[Kubernetes v1.18+](https://kubernetes.io) is installed
+- [Kubernetes v1.18+](https://kubernetes.io) is installed
 
 ---
 
 ## Install
 
-++ All-in-one
++++ All-in-one
 
 ```
 cat <<EOF | kubectl apply -f -

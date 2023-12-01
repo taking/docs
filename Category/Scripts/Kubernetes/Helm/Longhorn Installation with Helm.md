@@ -20,9 +20,9 @@ tags: [kubernetes, helm]
 
 ## Prerequisites
 
-[Kubernetes v1.18+](https://kubernetes.io) is installed using either [`helm v3.2.0+`](https://helm.sh).
-(All Nodes) folder (`mkdir -p /data/longhorn`)
-(All Nodes) iscsi (`apt install open-iscsi -y`)
+- [Kubernetes v1.18+](https://kubernetes.io) is installed using either [`helm v3.2.0+`](https://helm.sh).
+- (All Nodes) folder (`mkdir -p /data/longhorn`)
+- (All Nodes) iscsi (`apt install open-iscsi -y`)
 
 ---
 

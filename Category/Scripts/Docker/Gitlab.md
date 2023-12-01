@@ -21,7 +21,7 @@ tags: [docker, self-hosted]
 
 ## Prerequisites
 
-[Docker](https://docs.docker.com/engine/install/) is installed using either [`docker compose`](https://docs.docker.com/compose/).
+- [Docker](https://docs.docker.com/engine/install/) is installed using either [`docker compose`](https://docs.docker.com/compose/).
 
 ---
 
