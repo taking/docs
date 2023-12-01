@@ -11,29 +11,34 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>linux | Taking Docs Archives</title>
-    <meta name="title" content="linux | Taking Docs Archives">
+    <title>How to Create Proxmox Image | Taking Docs Archives</title>
+    <meta name="title" content="How to Create Proxmox Image | Taking Docs Archives">
+    <meta name="description" content="이 페이지에서는 Proxmox 에서 클라우드 이미지를 제작하는 방법에 대해서 다루고 있습니다.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.taking.kr/tags/linux/">
+    <link rel="canonical" href="https://docs.taking.kr/category/proxmox/how-to-create-proxmox-image/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.taking.kr/tags/linux/">
-    <meta property="og:title" content="linux | Taking Docs Archives">
+    <meta property="og:url" content="https://docs.taking.kr/category/proxmox/how-to-create-proxmox-image/">
+    <meta property="og:title" content="How to Create Proxmox Image | Taking Docs Archives">
+    <meta property="og:description" content="이 페이지에서는 Proxmox 에서 클라우드 이미지를 제작하는 방법에 대해서 다루고 있습니다.">
+    <meta property="og:image" content="https://p158.p1.n0.cdn.getcloudapp.com/items/jku6wKk1/c0154f2a-3d08-4562-adc5-d74ac48c39d5.png?source=viewer&v=eca80c12e3151b6321cb33b222960b90">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.taking.kr/tags/linux/">
-    <meta property="twitter:title" content="linux | Taking Docs Archives">
+    <meta property="twitter:url" content="https://docs.taking.kr/category/proxmox/how-to-create-proxmox-image/">
+    <meta property="twitter:title" content="How to Create Proxmox Image | Taking Docs Archives">
+    <meta property="twitter:description" content="이 페이지에서는 Proxmox 에서 클라우드 이미지를 제작하는 방법에 대해서 다루고 있습니다.">
+    <meta property="twitter:image" content="https://p158.p1.n0.cdn.getcloudapp.com/items/jku6wKk1/c0154f2a-3d08-4562-adc5-d74ac48c39d5.png?source=viewer&v=eca80c12e3151b6321cb33b222960b90">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.754724019127" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.754724019127" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.754724019127" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.754724019127" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.754724019127" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.754724019127" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -52,7 +57,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-2xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Taking.kr</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
@@ -65,7 +70,7 @@
                     <nav class="hidden md:flex">
                         <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                             <li class="mr-6">
-                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../../">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                         <g fill="currentColor">
                                             <path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/>
@@ -169,7 +174,7 @@
                             <nav>
                                 <ul class="flex flex-wrap justify-center items-center">
                                     <li class="mr-6">
-                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../../">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                                 <g fill="currentColor">
                                                     <path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/>
@@ -220,30 +225,189 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="tag-linux" class="break-words">
+<!-- Add content to _includes/top.md to include here -->
+<doc-anchor-target id="how-to-create-proxmox-image" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tag-linux">#</doc-anchor-trigger>
-        <span>Tag: linux</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-create-proxmox-image">#</doc-anchor-trigger>
+        <span>How to Create Proxmox Image</span>
     </h1>
 </doc-anchor-target>
-<p>See all <a href="../">tags</a>.</p>
-<a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="../../category/linux/리눅스-명령어-대체-목록/">
-    <div class="relative shrink-0 bg-gray-300 md:w-5/12 pb-9/16 md:pb-0 dark:bg-dark-450">
-        <img class="absolute object-cover w-full h-full" src="https://raw.githubusercontent.com/lsd-rs/lsd/assets/screen_lsd.png">
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>이 페이지에서는 <a href="https://www.proxmox.com/en/"><code v-pre>Proxmox</code></a>에서 클라우드 이미지를 제작하는 방법에 대해서 다루고 있습니다.</p>
+        </div>
     </div>
-    <div class="p-6">
-        <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">Category &#8226; Linux</div>
-        <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">리눅스 명령어 대체 목록</div>
-        <div class="line-clamp-3"><p class="hidden mt-2 md:block">lsd Screenshot</p></div>
-    </div>
-</a>
+</div>
+<doc-anchor-target id="reference">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reference">#</doc-anchor-trigger>
+        <span>Reference</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><a href="https://austinsnerdythings.com/2021/08/30/how-to-create-a-proxmox-ubuntu-cloud-init-image/">How to create a Proxmox Ubuntu cloud-init image | austinsnerdythings</a></li>
+<li><a href="https://gist.github.com/KrustyHack/fa39e509b5736703fb4a3d664157323f">proxmox-ubuntu-cloud-howto | Gist</a></li>
+<li><a href="https://www.alibabacloud.com/topic-center/a1/fcsoqejpa74r-proxmox-cloud-init-os-template-creation-what-the-server-alibaba-cloud">Proxmox Cloud-Init OS template creation | alibabacloud</a></li>
+</ul>
+<doc-anchor-target id="prerequisites">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#prerequisites">#</doc-anchor-trigger>
+        <span>Prerequisites</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><a href="https://www.proxmox.com/en/downloads">Proxmox</a> is installed.</li>
+</ul>
+<hr>
+<doc-anchor-target id="how-to">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to">#</doc-anchor-trigger>
+        <span>How-to</span>
+    </h2>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="prepare-cloud-init-templates">
+<template #title>Prepare Cloud-init Templates</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none"># ubuntu 20.04 cloudimg
+wget https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img
 
-                                
+# 새로운 VM 이미지 생성 (vmid, memory, network 등)
+qm create 9000 --core=8 --memory 16384 --net0 virtio,bridge=vmbr0 --agent 1 --balloon 0
+
+# 다운로드한 이미지를 local-lvm 저장소로 가져오기
+qm importdisk 9000 focal-server-cloudimg-amd64.img local-lvm
+
+# VM에 새 디스크를 SCSI 드라이브로 연결 (ubuntu 의 경우, virtio-scsi-pci 를 필요로 함)
+qm set 9000 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-9000-disk-0
+
+# cloudinit 데이터를 VM을 전송을 위해 ide2 CDROM 드라이브를 구성
+qm set 9000 --ide2 local-lvm:cloudinit
+
+# bootdisk 를 scsi0 로 설정하여, BIOS가 디스크에서만 부팅되도록 제한
+qm set 9000 --boot c --bootdisk scsi0
+
+# We also want to configure a serial console and use that as display. Many Cloud-Init images rely on that, because it is an requirement for OpenStack images.
+qm set 9000 --serial0 socket --vga serial0
+
+# 작업 이미지를 템플릿으로 변환
+qm template 9000</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="deploy-templates">
+<template #title>Deploy Templates</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none"># 템플릿을 클론하기
+qm clone 9000 101 --name ubuntu-20.04
+
+# IP 주소 등록
+qm set 101 --ipconfig0 ip=192.168.0.101/24,gw=192.168.0.1 --nameserver 8.8.8.8
+# or qm set 101 --ipconfig0 ip=dhcp
+
+# ID &amp; PW 등록
+qm set 101 --cipassword=&quot;somepassword&quot; --ciuser=taking
+
+# 디스크 사이즈
+qm resize 101 scsi0 +60G</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="option-disk-pass-throungh">
+<template #title>(Option) Disk Pass-throungh</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">lsblk |awk 'NR==1{print $0&quot; DEVICE-ID(S)&quot;}NR&gt;1{dev=$1;printf $0&quot; &quot;;system(&quot;find /dev/disk/by-id -lname \&quot;*&quot;dev&quot;\&quot; -printf \&quot; %p\&quot;&quot;);print &quot;&quot;;}'|grep -v -E 'part|lvm'
+qm set 100 --sata0 /dev/disk/by-id/{YOUR DISK ID}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<p><figure class="content-center">
+    <img src="https://p158.p1.n0.cdn.getcloudapp.com/items/jku6wKk1/c0154f2a-3d08-4562-adc5-d74ac48c39d5.png?source=viewer&amp;v=eca80c12e3151b6321cb33b222960b90" alt="Proxmox Screenshot">
+    <figcaption class="caption">Proxmox Screenshot</figcaption>
+</figure>
+</p>
+<p>That&#x27;s it! <span class="docs-emoji">&#x1F389;</span></p>
+<hr>
+<doc-anchor-target id="memo">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#memo">#</doc-anchor-trigger>
+        <span>memo</span>
+    </h2>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>변경사항(업데이트)가 있을 시, 안내 없이 변경 될 수 있습니다.</p>
+        </div>
+    </div>
+</div>
+<!-- Add content to _includes/bottom.md to include here -->
+
+                                <div class="flex items-center mt-6 mb-6 clear-both">
+                                    <span>
+                                        <a href="../../../tags/">
+                                            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+                                        </a>
+                                        <span class="mr-2"><a href="../../../tags/proxmox/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>proxmox</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../../tags/cloud/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>cloud</span>
+                                </a></span>
+                                    </span>
+                                </div>
+                
                                 <!-- Required only on API pages -->
                                 <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
                             </div>
                             <footer class="clear-both">
+                                <div class="flex flex-wrap items-center justify-between mt-14">
+                                    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/taking/docs/blob/main/Category/Proxmox/How to Create Proxmox Image.md" target="_blank" rel="noopener">
+                                        <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        <span>Edit this page</span>
+                                    </a>
+                                </div>
                             
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../category/linux/리눅스-명령어-대체-목록/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">리눅스 명령어 대체 목록</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../category/scripts/docker/coder/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Coder</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
                             </footer>
                         </main>
                 
@@ -252,7 +416,7 @@
                                 <div>
                                     <ul class="flex flex-wrap items-center text-sm">
                                         <li>
-                                            <a class="inline-flex items-center mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="../../about/">
+                                            <a class="inline-flex items-center mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="../../../about/">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                                     <g fill="currentColor">
                                                         <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
@@ -292,7 +456,7 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "linux", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "How to Create Proxmox Image", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 
     <!-- Add content to _includes/body.html to include here -->
 </body>
