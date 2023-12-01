@@ -67,13 +67,13 @@ services:
 
 # gitea
 
-GITEA**mailer**ENABLED=true
-GITEA**mailer**FROM={your_gmail_account}
-GITEA**mailer**MAILER_TYPE=smtp
-GITEA**mailer**HOST=smtp.gmail.com:465
-GITEA**mailer**IS_TLS_ENABLED=false
-GITEA**mailer**USER={your_gmail_account}
-GITEA**mailer**PASSWD={your_gmail_application_password}
+GITEA__mailer__ENABLED=true
+GITEA__mailer__FROM={your_gmail_account}
+GITEA__mailer__MAILER_TYPE=smtp
+GITEA__mailer__HOST=smtp.gmail.com:465
+GITEA__mailer__IS_TLS_ENABLED=false
+GITEA__mailer__USER={your_gmail_account}
+GITEA__mailer__PASSWD={your_gmail_application_password}
 
 ```
 
