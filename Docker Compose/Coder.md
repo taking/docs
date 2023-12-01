@@ -1,8 +1,23 @@
 ---
 order: 100
 icon: note
-tags: [docker]
+tags: [docker, self-hosted]
 ---
+
+# What is `Coder`?
+
+[`Coder`](https://coder.com/)는 [`Visual Studio Code`](https://code.visualstudio.com/)를 포팅하여, Self-hosted로 설치를 통해 클라우드에서 [VS Code](https://code.visualstudio.com/)를 사용할 수 있는 플랫폼입니다.
+
+- [Coder v2](https://coder.com/docs/v2/latest) (워크스페이스 별로 VS Code 를 관리할 수 있는 플랫폼)
+- [Coder v1](https://coder.com/docs/code-server/latest) (VS Code 단일 서비스)
+
+![Coder v2 Screenshot](https://coder.com/_next/image?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcoder%2Fcoder%2Fmain%2Fdocs%2Fimages%2Fhero-image.png&w=3840&q=100)
+
+!!!
+
+이 페이지에서는 [Coder v2](https://coder.com/docs/v2/latest)에 대해서 다루고 있습니다.
+
+!!!
 
 ## Prerequisites
 
@@ -59,24 +74,10 @@ services:
 
 ```
 POSTGRES_USER=taking
-POSTGRES_PASSWORD=As6SF8L3RdzbfwnE5h9
+POSTGRES_PASSWORD={your_postgres_password}
 POSTGRES_DB=coder
 
 CODER_ACCESS_URL=code.taking.kr
-```
-
-+++ yarn
-
-```
-yarn global add retypeapp
-retype watch
-```
-
-+++ dotnet
-
-```
-dotnet tool install retypeapp --global
-retype watch
 ```
 
 +++
