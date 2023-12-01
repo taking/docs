@@ -5,40 +5,40 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.754725537881">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.754726515760">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>h5ai | Taking Docs Archives</title>
-    <meta name="title" content="h5ai | Taking Docs Archives">
-    <meta name="description" content="이 페이지에서는 h5ai 을 kubernetes에서 설치하는 방법을 다루고 있습니다.">
+    <title>Longhorn Installation with Helm | Taking Docs Archives</title>
+    <meta name="title" content="Longhorn Installation with Helm | Taking Docs Archives">
+    <meta name="description" content="이 페이지에서는 Longhorn 을 Helm을 통해서 설치하는 방법을 다루고 있습니다.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.taking.kr/1.-category/scripts/kubernetes/legecy/h5ai/">
+    <link rel="canonical" href="https://docs.taking.kr/category/scripts/kubernetes/helm/longhorn-installation-with-helm/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.taking.kr/1.-category/scripts/kubernetes/legecy/h5ai/">
-    <meta property="og:title" content="h5ai | Taking Docs Archives">
-    <meta property="og:description" content="이 페이지에서는 h5ai 을 kubernetes에서 설치하는 방법을 다루고 있습니다.">
-    <meta property="og:image" content="https://p158.p1.n0.cdn.getcloudapp.com/items/GGuy1NPW/a9afd626-23c5-45db-8df7-39e97911a519.png?source=viewer&v=c85b35646ce4bee4744c9f4bc3e5badf">
+    <meta property="og:url" content="https://docs.taking.kr/category/scripts/kubernetes/helm/longhorn-installation-with-helm/">
+    <meta property="og:title" content="Longhorn Installation with Helm | Taking Docs Archives">
+    <meta property="og:description" content="이 페이지에서는 Longhorn 을 Helm을 통해서 설치하는 방법을 다루고 있습니다.">
+    <meta property="og:image" content="https://longhorn.io/img/screenshots/getting-started/longhorn-ui.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.taking.kr/1.-category/scripts/kubernetes/legecy/h5ai/">
-    <meta property="twitter:title" content="h5ai | Taking Docs Archives">
-    <meta property="twitter:description" content="이 페이지에서는 h5ai 을 kubernetes에서 설치하는 방법을 다루고 있습니다.">
-    <meta property="twitter:image" content="https://p158.p1.n0.cdn.getcloudapp.com/items/GGuy1NPW/a9afd626-23c5-45db-8df7-39e97911a519.png?source=viewer&v=c85b35646ce4bee4744c9f4bc3e5badf">
+    <meta property="twitter:url" content="https://docs.taking.kr/category/scripts/kubernetes/helm/longhorn-installation-with-helm/">
+    <meta property="twitter:title" content="Longhorn Installation with Helm | Taking Docs Archives">
+    <meta property="twitter:description" content="이 페이지에서는 Longhorn 을 Helm을 통해서 설치하는 방법을 다루고 있습니다.">
+    <meta property="twitter:image" content="https://longhorn.io/img/screenshots/getting-started/longhorn-ui.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../../../resources/css/retype.css?v=3.5.0.754725537881" rel="stylesheet">
+    <link href="../../../../../resources/css/retype.css?v=3.5.0.754726515760" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../../resources/js/config.js?v=3.5.0.754725537881" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../../resources/js/config.js?v=3.5.0.754726515760" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../../resources/js/lunr.js?v=3.5.0.754725537881" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../../resources/js/lunr.js?v=3.5.0.754726515760" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -226,10 +226,10 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
 <!-- Add content to _includes/top.md to include here -->
-<doc-anchor-target id="h5ai" class="break-words">
+<doc-anchor-target id="longhorn-installation-with-helm" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#h5ai">#</doc-anchor-trigger>
-        <span>h5ai</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#longhorn-installation-with-helm">#</doc-anchor-trigger>
+        <span>Longhorn Installation with Helm</span>
     </h1>
 </doc-anchor-target>
 <div class="flex mb-6">
@@ -245,20 +245,20 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>이 페이지에서는 <a href="https://larsjung.de/h5ai/">h5ai</a>을 kubernetes에서 설치하는 방법을 다루고 있습니다.</p>
+<p>이 페이지에서는 <a href="https://longhorn.io">Longhorn</a>을 Helm을 통해서 설치하는 방법을 다루고 있습니다.</p>
         </div>
     </div>
 </div>
-<doc-anchor-target id="what-is-h5ai">
+<doc-anchor-target id="what-is-longhorn">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-h5ai">#</doc-anchor-trigger>
-        <span>What is <code v-pre>h5ai</code>?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-longhorn">#</doc-anchor-trigger>
+        <span>What is <code v-pre>Longhorn</code>?</span>
     </h2>
 </doc-anchor-target>
-<p><a href="ttps://larsjung.de/h5ai/"><code v-pre>h5ai</code></a>는 모던하고 심플한 파일 서버로 간단하게 설치하여 사용할 수 있다.</p>
+<p><a href="https://longhorn.io"><code v-pre>Longhorn</code></a>은 Kubernetes에서 활용할 수 있는 오픈소스 분산 블록 스토리지 시스템(distributed block storage system)이며, Rancher Lab에서 개발되었습니다.</p>
 <p><figure class="content-center">
-    <img src="https://p158.p1.n0.cdn.getcloudapp.com/items/GGuy1NPW/a9afd626-23c5-45db-8df7-39e97911a519.png?source=viewer&amp;v=c85b35646ce4bee4744c9f4bc3e5badf" alt="h5ai Screenshot">
-    <figcaption class="caption">h5ai Screenshot</figcaption>
+    <img src="https://longhorn.io/img/screenshots/getting-started/longhorn-ui.png" alt="Longhorn Dashboard Screenshot">
+    <figcaption class="caption">Longhorn Dashboard Screenshot</figcaption>
 </figure>
 </p>
 <doc-anchor-target id="prerequisites">
@@ -268,7 +268,9 @@
     </h2>
 </doc-anchor-target>
 <ul>
-<li><a href="https://kubernetes.io">Kubernetes v1.18+</a> is installed</li>
+<li><a href="https://kubernetes.io">Kubernetes v1.18+</a> is installed using either <a href="https://helm.sh"><code v-pre>helm v3.2.0+</code></a>.</li>
+<li>(All Nodes) folder (<code v-pre>mkdir -p /data/longhorn</code>)</li>
+<li>(All Nodes) iscsi (<code v-pre>apt install open-iscsi -y</code>)</li>
 </ul>
 <hr>
 <doc-anchor-target id="install">
@@ -278,103 +280,28 @@
     </h2>
 </doc-anchor-target>
 <doc-tabs>
-<doc-tab v-cloak id="all-in-one">
-<template #title>All-in-one</template>
+<doc-tab v-cloak id="helm-update">
+<template #title>Helm update</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">cat &lt;&lt;EOF | kubectl apply -f -
----
-kind: Pod
-apiVersion: v1
-metadata:
-  name: h5ai
-  labels:
-    app: h5ai
-spec:
-  containers:
-    - name: h5ai
-      image: awesometic/h5ai:latest
-      imagePullPolicy: IfNotPresent
-      ports:
-        - containerPort: 80
-      volumeMounts:
-        - mountPath: &quot;/h5ai&quot;
-          name: storage-volume
-      env:
-        - name: PUID
-          value: &quot;1000&quot;
-        - name: PGID
-          value: &quot;1000&quot;
-        - name: TZ
-          value: &quot;Asia/Seoul&quot;
-  volumes:
-    - name: storage-volume
-      hostPath:
-        path: /mnt/nfs
----
-kind: Service
-apiVersion: v1
-metadata:
-  name: h5ai
-spec:
-  selector:
-    app: h5ai
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 30000
-  type: NodePort
-EOF</code></pre>
+<pre class="language-none"><code v-pre class="language-none">helm repo add longhorn https://charts.longhorn.io
+helm repo update longhorn</code></pre>
 </doc-codeblock></div>
 </doc-tab>
-<doc-tab v-cloak id="pod">
-<template #title>Pod</template>
+<doc-tab v-cloak id="helm-install">
+<template #title>Helm Install</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">kind: Pod
-apiVersion: v1
-metadata:
-  name: h5ai
-  labels:
-    app: h5ai
-spec:
-  containers:
-    - name: h5ai
-      image: awesometic/h5ai:latest
-      imagePullPolicy: IfNotPresent
-      ports:
-        - containerPort: 80
-      volumeMounts:
-        - mountPath: &quot;/h5ai&quot;
-          name: storage-volume
-      env:
-        - name: PUID
-          value: &quot;1000&quot;
-        - name: PGID
-          value: &quot;1000&quot;
-        - name: TZ
-          value: &quot;Asia/Seoul&quot;
-  volumes:
-    - name: storage-volume
-      hostPath:
-        path: /mnt/nfs</code></pre>
+<pre class="language-none"><code v-pre class="language-none">mkdir -p /data/longhorn
+helm install longhorn longhorn/longhorn \
+    --create-namespace \
+    --namespace longhorn-system \
+    --set defaultSettings.defaultDataPath=&quot;/data/longhorn&quot; \
+    --set defaultSettings.defaultDataLocality=&quot;best-effort&quot;</code></pre>
 </doc-codeblock></div>
 </doc-tab>
-<doc-tab v-cloak id="service">
-<template #title>Service</template>
+<doc-tab v-cloak id="default-set-storageclass">
+<template #title>Default set StorageClass</template>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">kind: Service
-apiVersion: v1
-metadata:
-  name: h5ai
-spec:
-  selector:
-    app: h5ai
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 30000
-  type: NodePort</code></pre>
+<pre class="language-none"><code v-pre class="language-none">kubectl patch storageclass longhorn -p '{&quot;metadata&quot;: {&quot;annotations&quot;:{&quot;storageclass.kubernetes.io/is-default-class&quot;:&quot;true&quot;}}}'</code></pre>
 </doc-codeblock></div>
 </doc-tab>
 </doc-tabs>
@@ -413,6 +340,9 @@ spec:
                                         <span class="mr-2"><a href="../../../../../tags/kubernetes/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
                                     <span>kubernetes</span>
                                 </a></span>
+                                        <span class="mr-2"><a href="../../../../../tags/helm/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>helm</span>
+                                </a></span>
                                     </span>
                                 </div>
                 
@@ -421,7 +351,7 @@ spec:
                             </div>
                             <footer class="clear-both">
                                 <div class="flex flex-wrap items-center justify-between mt-14">
-                                    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/taking/docs/blob/main/1. Category/Scripts/Kubernetes/Legecy/h5ai.md" target="_blank" rel="noopener">
+                                    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/taking/docs/blob/main/Category/Scripts/Kubernetes/Helm/Longhorn Installation with Helm.md" target="_blank" rel="noopener">
                                         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         <span>Edit this page</span>
                                     </a>
@@ -429,16 +359,23 @@ spec:
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../../../1.-category/scripts/kubernetes/helm/longhorn-installation-with-helm/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../../../category/scripts/docker/zitadel(sso)/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Longhorn Installation with Helm</span>
+                                                <span class="block mt-1">Zitadel (SSO)</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../../../category/scripts/kubernetes/legecy/h5ai/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">h​5​ai</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
                                     </div>
                                 </nav>
                             </footer>
@@ -489,7 +426,7 @@ spec:
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "h5ai", level: 5, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Longhorn Installation with Helm", level: 5, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 
     <!-- Add content to _includes/body.html to include here -->
 </body>
