@@ -4,17 +4,19 @@ icon: note
 tags: [docker, self-hosted]
 ---
 
-# What is `Gitea`?
+# Gitea
 
-[`Gitea`](https://about.gitea.com/)는 [`Git`](https://git-scm.com/)을 관리하기 위한 플랫폼으로 Self-hosted로 설치를 통해 Git Repository 프로젝트를 관리할 수 있습니다.
+!!!
+
+이 페이지에서는 [Gitea](https://about.gitea.com)에 대해서 다루고 있습니다.
+
+!!!
+
+## What is `Gitea`?
+
+[`Gitea`](https://about.gitea.com)는 [`Git`](https://git-scm.com/)을 관리하기 위한 플랫폼으로 Self-hosted로 설치를 통해 Git Repository 프로젝트를 관리할 수 있습니다.
 
 ![Gitea Screenshot](https://about.gitea.com/img/home-screenshot.png)
-
-!!!
-
-Gitea runner에 대한 정보를 포함하고 있습니다.
-
-!!!
 
 ## Prerequisites
 
@@ -59,8 +61,6 @@ services:
      - GITEA_RUNNER_NAME=gitea-runner
 ```
 
-```
-
 +++ .env
 
 ```
@@ -85,5 +85,8 @@ That's it! :tada:
 
 ## memo
 
-변경사항(업데이트)가 있을 시, 안내 없이 변경 될 수 있는 콘텐츠입니다.
-```
+!!!
+
+변경사항(업데이트)가 있을 시, 안내 없이 변경 될 수 있습니다.
+
+!!!

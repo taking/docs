@@ -4,7 +4,15 @@ icon: note
 tags: [docker, self-hosted]
 ---
 
-# What is `Coder`?
+# Coder
+
+!!!
+
+이 페이지에서는 [Coder v2](https://coder.com/docs/v2/latest)에 대해서 다루고 있습니다.
+
+!!!
+
+## What is `Coder`?
 
 [`Coder`](https://coder.com/)는 [`Visual Studio Code`](https://code.visualstudio.com/)를 포팅하여, Self-hosted로 설치를 통해 클라우드에서 [VS Code](https://code.visualstudio.com/)를 사용할 수 있는 플랫폼입니다.
 
@@ -12,12 +20,6 @@ tags: [docker, self-hosted]
 - [Coder v1](https://coder.com/docs/code-server/latest) (VS Code 단일 서비스)
 
 ![Coder v2 Screenshot](https://coder.com/_next/image?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcoder%2Fcoder%2Fmain%2Fdocs%2Fimages%2Fhero-image.png&w=3840&q=100)
-
-!!!
-
-이 페이지에서는 [Coder v2](https://coder.com/docs/v2/latest)에 대해서 다루고 있습니다.
-
-!!!
 
 ## Prerequisites
 
@@ -88,4 +90,8 @@ That's it! :tada:
 
 ## memo
 
-변경사항(업데이트)가 있을 시, 안내 없이 변경 될 수 있는 콘텐츠입니다.
+!!!
+
+변경사항(업데이트)가 있을 시, 안내 없이 변경 될 수 있습니다.
+
+!!!
