@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.754974281853">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.755161710367">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -34,11 +34,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../../resources/css/retype.css?v=3.5.0.754974281853" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.5.0.755161710367" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.5.0.754974281853" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.5.0.755161710367" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.5.0.754974281853" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.5.0.755161710367" data-turbo-eval="false" defer></script>
 
     <!-- Add content to _includes/head.html to include here -->
 </head>
@@ -307,17 +307,68 @@ services:
     image: 'ghcr.io/zitadel/zitadel:latest'
     container_name: 'zitadel'
     restart: 'unless-stopped'
-    command: 'start-from-init --masterkey &quot;j6B2VFUXrSDZYLtWwDLEtESbPozr6KhD&quot; --tlsMode disabled'
+    command: 'start-from-init --masterkey &quot;j6B2VFUXrSDZYLtWwDLEtESb45zr6KhD&quot; --tlsMode disabled'
     environment:
       # https://zitadel.com/docs/self-hosting/manage/configure
       - 'ZITADEL_DATABASE_COCKROACH_HOST=crdb'
       - 'ZITADEL_EXTERNALSECURE=false'
-      - 'ZITADEL_EXTERNALDOMAIN={your_external_domain}'
+      - 'ZITADEL_EXTERNALDOMAIN={your_domain}'
       - 'ZITADEL_FIRSTINSTANCE_ORG_NAME=taking'
       - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_USERNAME={your_username}'
       - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORD={your_password}'
       - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_EMAIL_ADDRESS={your_email}'
       - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_EMAIL_VERIFIED=true'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORDCHANGEREQUIRED=false'
+    depends_on:
+      crdb:
+        condition: 'service_healthy'
+    ports:
+      - '8080:8080'
+
+  crdb:
+    image: 'cockroachdb/cockroach:latest-v22.2'
+    restart: 'unless-stopped'
+    container_name: 'crdb'
+    command: 'start-single-node --insecure'
+    healthcheck:
+      test: [&quot;CMD&quot;, &quot;curl&quot;, &quot;-f&quot;, &quot;http://127.0.0.1:8080/health?ready=1&quot;]
+      interval: '10s'
+      timeout: '30s'
+      retries: 5
+      start_period: '20s'
+    ports:
+      - '9090:8080'
+      - '26257:26257'
+    volumes:
+      - &quot;./cockroach-data:/cockroach/cockroach-data&quot;</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-tabs>
+<doc-tab v-cloak id="docker-compose-yml-https-domain">
+<template #title>Docker-compose.yml (https domain)</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">version: '3.8'
+
+services:
+  zitadel:
+    image: 'ghcr.io/zitadel/zitadel:latest'
+    container_name: 'zitadel'
+    restart: 'unless-stopped'
+    command: 'start-from-init --masterkey &quot;j6B2VFUXrSDZYLtWwDLEtESb45zr6KhD&quot; --tlsMode external'
+    environment:
+      # https://zitadel.com/docs/self-hosting/manage/configure
+      - 'ZITADEL_DATABASE_COCKROACH_HOST=crdb'
+      - 'ZITADEL_EXTERNALPORT=443'
+      - 'ZITADEL_EXTERNALSECURE=true'
+      - 'ZITADEL_TLS_ENABLED=false'
+      - 'ZITADEL_EXTERNALDOMAIN={your_domain}'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_NAME=taking'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_USERNAME={your_username}'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORD={your_password}'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_EMAIL_ADDRESS={your_email}'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_EMAIL_VERIFIED=true'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORDCHANGEREQUIRED=false'
     depends_on:
       crdb:
         condition: 'service_healthy'
