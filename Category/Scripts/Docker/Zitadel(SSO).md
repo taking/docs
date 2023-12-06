@@ -47,17 +47,68 @@ services:
     image: 'ghcr.io/zitadel/zitadel:latest'
     container_name: 'zitadel'
     restart: 'unless-stopped'
-    command: 'start-from-init --masterkey "j6B2VFUXrSDZYLtWwDLEtESbPozr6KhD" --tlsMode disabled'
+    command: 'start-from-init --masterkey "j6B2VFUXrSDZYLtWwDLEtESb45zr6KhD" --tlsMode disabled'
     environment:
       # https://zitadel.com/docs/self-hosting/manage/configure
       - 'ZITADEL_DATABASE_COCKROACH_HOST=crdb'
       - 'ZITADEL_EXTERNALSECURE=false'
-      - 'ZITADEL_EXTERNALDOMAIN={your_external_domain}'
+      - 'ZITADEL_EXTERNALDOMAIN={your_domain}'
       - 'ZITADEL_FIRSTINSTANCE_ORG_NAME=taking'
       - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_USERNAME={your_username}'
       - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORD={your_password}'
       - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_EMAIL_ADDRESS={your_email}'
       - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_EMAIL_VERIFIED=true'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORDCHANGEREQUIRED=false'
+    depends_on:
+      crdb:
+        condition: 'service_healthy'
+    ports:
+      - '8080:8080'
+
+  crdb:
+    image: 'cockroachdb/cockroach:latest-v22.2'
+    restart: 'unless-stopped'
+    container_name: 'crdb'
+    command: 'start-single-node --insecure'
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8080/health?ready=1"]
+      interval: '10s'
+      timeout: '30s'
+      retries: 5
+      start_period: '20s'
+    ports:
+      - '9090:8080'
+      - '26257:26257'
+    volumes:
+      - "./cockroach-data:/cockroach/cockroach-data"
+```
+
++++
+
++++ Docker-compose.yml (https domain)
+
+```
+version: '3.8'
+
+services:
+  zitadel:
+    image: 'ghcr.io/zitadel/zitadel:latest'
+    container_name: 'zitadel'
+    restart: 'unless-stopped'
+    command: 'start-from-init --masterkey "j6B2VFUXrSDZYLtWwDLEtESb45zr6KhD" --tlsMode external'
+    environment:
+      # https://zitadel.com/docs/self-hosting/manage/configure
+      - 'ZITADEL_DATABASE_COCKROACH_HOST=crdb'
+      - 'ZITADEL_EXTERNALPORT=443'
+      - 'ZITADEL_EXTERNALSECURE=true'
+      - 'ZITADEL_TLS_ENABLED=false'
+      - 'ZITADEL_EXTERNALDOMAIN={your_domain}'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_NAME=taking'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_USERNAME={your_username}'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORD={your_password}'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_EMAIL_ADDRESS={your_email}'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_EMAIL_VERIFIED=true'
+      - 'ZITADEL_FIRSTINSTANCE_ORG_HUMAN_PASSWORDCHANGEREQUIRED=false'
     depends_on:
       crdb:
         condition: 'service_healthy'
