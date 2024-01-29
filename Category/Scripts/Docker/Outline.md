@@ -4,7 +4,7 @@ icon: note
 tags: [docker, docker-compose, self-hosted]
 ---
 
-# Gitea
+# Outline
 
 !!!
 
